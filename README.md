@@ -131,7 +131,7 @@ Visualizations
 spotify-listening-analysis/
 │
 ├── 📊 powerbi/
-│   └── annapowerbi.pbix
+│   └── powerbi.pbix
 │
 ├── 📁 dataset/
 │   └── spotify_history.xlsx
@@ -165,7 +165,7 @@ spotify-listening-analysis/powerbi/
 Open:
 
 ```text
-annapowerbi.pbix
+powerbi.pbix
 ```
 
 using **Microsoft Power BI Desktop**.

@@ -1,281 +1,160 @@
+# 🎧 Spotify Listening Analysis | Power BI
 
-# 🎵 Spotify Listening Analysis
+An interactive *Spotify Listening Analysis Dashboard* built using *Power BI, Power Query, DAX, and Excel* to transform raw Spotify listening-history data into meaningful insights about listening behaviour, track performance, artists, and usage patterns.
 
-> **An interactive data analytics project that transforms Spotify listening history into meaningful insights using Microsoft Power BI, Excel, and DAX.**
+## 📌 Project Overview
 
----
+Spotify generates large amounts of listening-history data, but raw records alone are difficult to interpret.
 
-## 📌 About the Project
+This project converts Spotify listening data into an interactive Power BI dashboard that helps explore:
 
-**Spotify Listening Analysis** is a data analytics and visualization project built to explore personal Spotify listening history and uncover patterns in music consumption.
+- Listening behaviour and trends
+- Most played tracks and artists
+- Listening activity over time
+- Track-level performance
+- Overall listening patterns
 
-The project uses **Microsoft Power BI** to transform raw listening-history data into an interactive dashboard, while **DAX** is used to create analytical calculations and measures.
-
-The goal is to turn raw listening records into **clear, interactive, and easy-to-understand visual insights**.
-
----
+The project demonstrates an end-to-end *data analytics workflow*, from raw data preparation to dashboard development and insight generation.
 
 ## 🎯 Objectives
 
-* 📊 Analyze Spotify listening history
-* 🎵 Understand listening patterns and behavior
-* ⏱️ Explore listening activity over time
-* 🔍 Identify trends within the available listening data
-* 🧮 Apply DAX measures for deeper analysis
-* 📈 Build an interactive Power BI dashboard
-* 💡 Present complex data through simple visualizations
+- Import and prepare Spotify listening-history data
+- Clean and transform raw data using Power Query
+- Create calculated measures using DAX
+- Identify important listening trends and patterns
+- Build an interactive and easy-to-understand dashboard
+- Convert raw data into actionable visual insights
 
----
+## 🛠️ Tech Stack
 
-## 🛠️ Tools & Technologies
+| Technology | Purpose |
+|---|---|
+| Power BI | Dashboard development and visualization |
+| Power Query | Data cleaning and transformation |
+| DAX | Measures and analytical calculations |
+| Microsoft Excel | Dataset storage and preprocessing |
+| Git & GitHub | Version control and project hosting |
 
-| Technology             | Purpose                                      |
-| ---------------------- | -------------------------------------------- |
-| **Microsoft Power BI** | Interactive dashboard and data visualization |
-| **DAX**                | Measures, calculations, and analytical logic |
-| **Microsoft Excel**    | Dataset storage and data preparation         |
-| **Git & GitHub**       | Version control and project management       |
+## 🔄 Project Workflow
 
----
-
-## 🏗️ Project Workflow
-
-```text
+text
 Spotify Listening History
           ↓
       Excel Dataset
           ↓
-   Data Preparation
+     Power Query
           ↓
-    Power BI Import
+Data Cleaning & Transformation
           ↓
-     DAX Measures
+      DAX Measures
           ↓
- Data Analysis & Visualization
+   Power BI Dashboard
           ↓
-   Interactive Dashboard
-          ↓
-     Insights & Trends
-```
+Analysis & Insights
 
----
 
-## 📊 Power BI Dashboard
+## 📊 Dashboard Analysis
 
-The Power BI dashboard provides an interactive way to explore the Spotify listening history.
+The dashboard is designed to analyze Spotify listening activity across multiple dimensions.
 
-It transforms the raw dataset into visual representations that make patterns and trends easier to understand.
+### 🎵 Track Analysis
+Identifies frequently played tracks and helps understand individual song performance.
 
-### Dashboard Analysis Includes
+### 🎤 Artist Analysis
+Highlights artists that contribute the most to overall listening activity.
 
-* 🎧 Listening activity
-* 📅 Time-based listening patterns
-* 🎵 Track-related analysis
-* 📈 Trends and comparisons
-* 🔢 Key performance indicators
-* 📊 Interactive visualizations
+### ⏱️ Listening Behaviour
+Analyzes listening activity and provides a clearer understanding of user engagement.
 
-> **Note:** The exact metrics and visualizations depend on the fields available in the dataset and the measures implemented in Power BI.
+### 📅 Time-Based Trends
+Examines how listening behaviour changes across different time periods.
 
----
+### 📈 Interactive Exploration
+Power BI filters and visualizations allow users to explore the dataset dynamically.
 
-## 🧮 DAX Analysis
+## 🧹 Data Preparation
 
-**DAX (Data Analysis Expressions)** is used to create calculated measures and support the analytical layer of the Power BI dashboard.
+Before visualization, the dataset is prepared using *Power Query*.
 
-The DAX code used in the project is available here:
+The data-preparation stage includes:
 
-```text
-dax/Code.docx
-```
+- Importing Spotify listening-history data
+- Checking data types
+- Handling unnecessary or inconsistent values
+- Preparing columns for analysis
+- Structuring the dataset for Power BI visualizations
+- Creating calculated metrics using DAX
 
-Example analytical concepts include:
+## 🧮 DAX
 
-* Aggregations
-* Counts
-* Time-based calculations
-* Measures
-* Filtering and comparison logic
+DAX (*Data Analysis Expressions*) is used to create analytical measures required by the dashboard.
 
----
+These measures help summarize listening activity and generate values used across Power BI visualizations.
 
-## 📂 Dataset
+The DAX-related project files are available in the [dax](./dax) directory.
 
-The Spotify listening-history dataset is stored in:
+## 📁 Project Structure
 
-```text
-dataset/spotify_history.xlsx
-```
-
-The dataset provides the underlying listening records used to build the Power BI analysis.
-
-### Data Pipeline
-
-```text
-Raw Spotify Data
-       ↓
-Data Cleaning / Preparation
-       ↓
-Power BI Data Model
-       ↓
-DAX Measures
-       ↓
-Visualizations
-```
-
----
-
-## 📁 Repository Structure
-
-```text
+text
 spotify-listening-analysis/
 │
-├── 📊 powerbi/
+├── dataset/
+│   └── spotify_history/
+│       └── spotify_history.xlsx
+│
+├── dax/
+│   └── Spotify DAXCode/
+│       └── code.docx
+│
+├── powerbi/
 │   └── powerbi.pbix
 │
-├── 📁 dataset/
-│   └── spotify_history.xlsx
-│
-├── 🧮 dax/
-│   └── Code.docx
-│
-└── 📖 README.md
-```
+└── README.md
 
----
 
 ## 🚀 How to Run the Project
 
-### 1. Clone the Repository
+### 1. Clone the repository
 
-```bash
+bash
 git clone https://github.com/prabhamurali65/spotify-listening-analysis.git
-```
 
-### 2. Open the Project
+
+### 2. Open the project folder
+
+bash
+cd spotify-listening-analysis
+
+
+### 3. Open the Power BI report
 
 Navigate to:
 
-```text
-spotify-listening-analysis/powerbi/
-```
-
-### 3. Open the Power BI File
-
-Open:
-
-```text
-powerbi.pbix
-```
-
-using **Microsoft Power BI Desktop**.
-
-### 4. Check the Dataset
-
-The source dataset is available in:
-
-```text
-dataset/spotify_history.xlsx
-```
-
-If Power BI asks for the dataset location, update the file path accordingly.
-
-### 5. Explore the Dashboard
-
-Use the available filters, charts, and visualizations to explore the listening data.
-
----
-
-## 💡 Key Features
-
-### 📊 Interactive Visualization
-
-Power BI enables users to interact with the data through charts, filters, and dashboard elements.
-
-### 🧮 DAX-Powered Analysis
-
-DAX measures provide additional calculations and analytical capabilities beyond the raw dataset.
-
-### 📈 Trend Analysis
-
-Listening records can be examined across available time-related fields to identify changes and patterns.
-
-### 🎵 Music Listening Insights
-
-The dashboard transforms listening records into a more understandable representation of music consumption.
-
-### 📂 Organized Project Structure
-
-The repository separates:
-
-* Power BI files
-* Dataset
-* DAX calculations
-* Documentation
-
-making the project easier to understand and maintain.
-
----
-
-## 🔍 What This Project Demonstrates
-
-This project demonstrates practical skills in:
-
-* **Data Analytics**
-* **Data Visualization**
-* **Power BI**
-* **DAX**
-* **Excel**
-* **Data Preparation**
-* **Dashboard Development**
-* **Git & GitHub**
-
----
-
-## 📚 Skills Learned
-
-Through this project, the following concepts are practiced:
-
-```text
-Excel
-  ↓
-Data Preparation
-  ↓
-Power BI
-  ↓
-Data Modeling
-  ↓
-DAX
-  ↓
-Visualization
-  ↓
-Data Storytelling
-```
-
----
-
-## 🔮 Future Improvements
-
-Possible future improvements include:
-
-* [ ] Add more advanced DAX measures
-* [ ] Add additional dashboard pages
-* [ ] Improve dashboard UI/UX
-* [ ] Add more advanced time-series analysis
-* [ ] Add additional interactive filters
-* [ ] Add screenshots and dashboard previews
-* [ ] Add automated data-refresh workflow
-* [ ] Expand the analysis with additional Spotify data
+text
+powerbi/powerbi.pbix
 
 
+Open the file using *Microsoft Power BI Desktop*.
 
-## 👩‍💻 Project Information
+### 4. Explore the dashboard
 
-**Project:** Spotify Listening Analysis
-**Domain:** Data Analytics & Business Intelligence
-**Primary Tool:** Microsoft Power BI
-**Analysis Language:** DAX
-**Dataset Format:** Excel (`.xlsx`)
+Use the available filters and visualizations to explore Spotify listening patterns and insights.
+
+## 💡 Skills Demonstrated
+
+This project demonstrates practical experience with:
+
+- Data Analytics
+- Data Cleaning
+- Data Transformation
+- Power Query
+- DAX
+- Power BI
+- Data Visualization
+- Dashboard Development
+- Exploratory Data Analysis
+- Git & GitHub
+
 
 
 ⭐ Conclusion

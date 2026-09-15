@@ -149,7 +149,7 @@ spotify-listening-analysis/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/spotify-listening-analysis.git
+git clone https://github.com/prabhamurali65/spotify-listening-analysis.git
 ```
 
 ### 2. Open the Project
